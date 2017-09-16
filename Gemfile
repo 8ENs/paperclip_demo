@@ -24,3 +24,6 @@ group :test do
   gem "capybara"
   gem "shoulda-matchers", ">= 3.0.0", require: false
 end
+
+# Use Puma as the app server
+gem 'puma', '~> 3.0'
