@@ -12,15 +12,15 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %>
+    <%= f.label :name, 'File name' %>
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :avatar %>
+    <%= f.label :avatar, 'Attachment' %>
     <%= f.file_field :avatar %>
   </div>
   <div class="actions">
-    <%= f.submit 'Upload file' %>
-    <%= link_to 'Nevermind', friends_path, class: 'button' %>
+    <%= f.submit 'Upload' %>
+    <%= link_to 'Cancel', friends_path, class: 'button' %>
   </div>
 <% end %>
